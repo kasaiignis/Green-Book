@@ -199,9 +199,7 @@
  			 $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
   			  if (this.hash !== "") {
   			    event.preventDefault();
-
  			     var hash = this.hash;
-
    			   $('html, body').animate({
      			   scrollTop: $(hash).offset().top
      			 }, 900, function(){
@@ -214,7 +212,6 @@
   		$(window).scroll(function() {
     			$(".slideanim").each(function(){
     			  var pos = $(this).offset().top;
-
     			  var winTop = $(window).scrollTop();
     			    if (pos < winTop + 600) {
       				    $(this).addClass("slide");
@@ -306,7 +303,7 @@
 					</div>
 					<div class="col-sm-4">
 						<span class="glyphicon glyphicon-heart logo-small"></span>
-						<h4>LOVE</h4>
+						<h4>TRUST</h4>
 						<p>From students, to students</p>
 					</div>
 					<div class="col-sm-4">
@@ -321,12 +318,12 @@
 						<span class="glyphicon glyphicon-leaf logo-small"></span>
 						<h4>GREEN</h4>
 						<p>No more wasteful paper</p>
-					
 					</div>
-					
+					<div class="col-sm-4">
+						<span class="glyphicon glyphicon-certificate logo-small"></span>
+						<h4>CERTIFIED</h4>
+						<p></p>
 					</div>
-
-					
 					<div class="col-sm-4">
 						<span class="glyphicon glyphicon-wrench logo-small"></span>
 						<h4 style="color:#303030;">HARD WORK</h4>
